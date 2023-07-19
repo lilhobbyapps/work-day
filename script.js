@@ -6,13 +6,11 @@ $(function() {
     // time-block containing the button that was clicked? How might the id be
   // useful when saving the description in local storage?
 
-  // var saveBtn = $(".saveBtn");
+var saveBtn = $(".saveBtn");
 
-  // // saveBtn.on( "click", function( ) {
-  // // });
-  
-
-$("header").css("text-align","center");
+saveBtn.on( "click", function( ) {
+alert("saved!");
+});
 
 var today = dayjs().format("dddd[,] MMMM D[,] YYYY");
 $("#currentDay").html(today);
